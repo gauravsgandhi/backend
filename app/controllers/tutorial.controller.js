@@ -3,6 +3,7 @@ const Tutorial = db.tutorials;
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
+   res.set('Access-Control-Allow-Origin', 'http://localhost:4200');
   // Validate request
   if (!req.body.title) {
     res.status(400).send({ message: "Content can not be empty!" });
