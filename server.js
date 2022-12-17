@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app express();
 
+//app cors fetaures added for cross origin
 app.use(cors())
 
 // parse requests of content-type - application/json
