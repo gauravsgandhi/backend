@@ -1,6 +1,10 @@
 const express = require("express");
-
+const cors = require("cors");
 const app express();
+
+var corsOptions = {
+  origin: "*"
+};
 
 // parse requests of content-type - application/json
 app.use(express.json());
