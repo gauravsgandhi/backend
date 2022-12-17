@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const app express();
+const app = express();
 
 //app cors fetaures added for cross origin
-app.use(cors())
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 require("./app/routes/turorial.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
